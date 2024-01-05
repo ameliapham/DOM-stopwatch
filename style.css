@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background: url('/images/race2.jpeg') no-repeat top center;
+    font-family: "geist", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 150px;
+    width: 300px;
+    background-color: bisque;
+    padding: 30px 50px 30px 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#title-heading{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#timer{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
