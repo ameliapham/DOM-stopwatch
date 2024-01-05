@@ -29,21 +29,27 @@ body{
     padding-bottom: 20px;
 }
 
-i{
-    border: 1px solid ;
+button{
+    height: 30px;
+    width: 30px;
     border-radius: 100%;
     padding: 5px;
     color: beige;
+    cursor: pointer;
+    margin-right: 10px;
+}
+button:last-child{
+    margin-right: 0;
 }
 
-.ri-play-fill{
+#startBtn{
     background-color: green;
 }
 
-.ri-pause-line{
-    background-color: rgb(224, 14, 6);
+#pauseBtn{
+    background-color: red;
 }
 
-.ri-refresh-line{
-    background-color: rgb(21, 6, 224);
+#resetBtn{
+    background-color: blue;
 }
