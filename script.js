@@ -24,5 +24,8 @@ const stopWatch = () => {
         }
     }
 
-    let displayTimer = document.getElementById('#timer').innerText = hours + ":" + minutes + ":" + seconds
+    let displayTimer = document.getElementById('timer').innerText = hours + ":" + minutes + ":" + seconds
+    console.log(displayTimer)
 }
+
+window.setInterval(stopWatch, 1000)
