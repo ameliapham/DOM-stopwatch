@@ -10,6 +10,11 @@ let seconds = 0
 let minutes = 0
 let hours = 0
 
+// Variables for leading zero
+let leadingSeconds = 0
+let leadingMinutes = 0
+let leadingHours = 0
+
 // Stopwatch function
 const stopWatch = () => {
     seconds++
@@ -24,7 +29,26 @@ const stopWatch = () => {
         }
     }
 
-    let displayTimer = document.getElementById('timer').innerText = hours + ":" + minutes + ":" + seconds
+    if (seconds < 10){
+        leadingSeconds = "0" + seconds
+    } else {
+        leadingSeconds = seconds
+    }
+
+    if (minutes < 10){
+        leadingMinutes = "0" + minutes
+    } else {
+        leadingMinutes = minutes
+    }
+
+    if (hours < 10){
+        leadingHours = "0" + hours
+    } else {
+        leadingHours = hours
+    }
+
+
+    let displayTimer = document.getElementById('timer').innerText = leadingHours + ":" + leadingMinutes + ":" + leadingSeconds
     console.log(displayTimer)
 }
 
