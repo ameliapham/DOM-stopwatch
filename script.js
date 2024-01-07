@@ -60,3 +60,8 @@ startBtn.addEventListener('click', () => {
         timerInterval = setInterval(stopWatch, 1000)
     }
 })
+
+pauseBtn.addEventListener('click', () => {
+    clearInterval(timerInterval)
+    timerInterval = null
+})
