@@ -52,19 +52,28 @@ const stopWatch = () => {
 
 // window.setInterval(stopWatch, 1000)
 
-// Variables for set Internal & timerstatus
+// Variables for set Internal
 let timerInterval = null
 
 startBtn.addEventListener('click', () => {
     if (timerInterval === null) {
         timerInterval = setInterval(stopWatch, 1000)
+        startBtn.classList.remove('start')
+        startBtn.classList.add('pause')
+        startBtn.innerHTML = '<i class="ri-pause-line ri-xl"></i>'
+    } else {
+        clearInterval(timerInterval)
+        startBtn.classList.remove('pause')
+        startBtn.classList.add('start')
+        startBtn.innerHTML = '<i class="ri-play-fill ri-xl"></i>'
+        timerInterval = null
     }
 })
 
-pauseBtn.addEventListener('click', () => {
+/*pauseBtn.addEventListener('click', () => {
     clearInterval(timerInterval)
     timerInterval = null
-})
+})*/
 
 resetBtn.addEventListener('click', () => {
     clearInterval(timerInterval)
@@ -73,4 +82,7 @@ resetBtn.addEventListener('click', () => {
     minutes = 0
     hours = 0
     document.getElementById('timer').innerText = "00:00:00";
+    startBtn.classList.remove('pause')
+    startBtn.classList.add('start')
+    startBtn.innerHTML = '<i class="ri-play-fill ri-xl"></i>'
 })

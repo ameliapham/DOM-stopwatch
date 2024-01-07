@@ -53,14 +53,19 @@ button:last-child{
     margin-right: 0;
 }
 
-#startBtn{
+i {
+    display: flex;
+    justify-content: center;
+}
+
+button.start{
     background-color: green;
 }
 
-#pauseBtn{
-    background-color: red;
+button.pause{
+    background-color: orange;
 }
 
 #resetBtn{
-    background-color: blue;
+    background-color: red;
 }
