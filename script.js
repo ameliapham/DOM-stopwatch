@@ -54,3 +54,9 @@ const stopWatch = () => {
 
 // Variables for set Internal & timerstatus
 let timerInterval = null
+
+startBtn.addEventListener('click', () => {
+    if (timerInterval === null) {
+        timerInterval = setInterval(stopWatch, 1000)
+    }
+})
