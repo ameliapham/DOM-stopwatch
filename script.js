@@ -47,9 +47,10 @@ const stopWatch = () => {
         leadingHours = hours
     }
 
-
-    let displayTimer = document.getElementById('timer').innerText = leadingHours + ":" + leadingMinutes + ":" + leadingSeconds
-    console.log(displayTimer)
+    document.getElementById('timer').innerText = leadingHours + ":" + leadingMinutes + ":" + leadingSeconds
 }
 
-window.setInterval(stopWatch, 1000)
+// window.setInterval(stopWatch, 1000)
+
+// Variables for set Internal & timerstatus
+let timerInterval = null
