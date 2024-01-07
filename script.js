@@ -65,3 +65,12 @@ pauseBtn.addEventListener('click', () => {
     clearInterval(timerInterval)
     timerInterval = null
 })
+
+resetBtn.addEventListener('click', () => {
+    clearInterval(timerInterval)
+    timerInterval = null
+    seconds = 0
+    minutes = 0
+    hours = 0
+    document.getElementById('timer').innerText = "00:00:00";
+})
