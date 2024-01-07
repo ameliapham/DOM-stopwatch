@@ -3,7 +3,7 @@
 }
 body{
     height: 100vh;
-    background: url('/images/race2.jpeg') no-repeat top center/cover;
+    background: url('/images/race2.webp') no-repeat top center/cover;
     font-family: "geist", sans-serif;
     display: flex;
     justify-content: center;
