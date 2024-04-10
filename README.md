@@ -1,2 +1,3 @@
 # DOM-stopwatch
-Link of project: https://dom-stopwatch.vercel.app/
+
+For a live experience, visit my [online demo](https://dom-stopwatch.vercel.app/).
